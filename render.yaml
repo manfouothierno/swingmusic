@@ -3,18 +3,9 @@ services:
     name: swingmusic
     env: docker
     dockerfilePath: ./Dockerfile
-    dockerComposePath: ./docker-compose.yml
+    plan: free
     envVars:
       - key: SWINGMUSIC_APP_VERSION
         value: 1.0.0
-    buildCommand: docker-compose build
-    startCommand: docker-compose up
-    ports:
-      - port: 1970
-        handlers:
-          - http
-    volumes:
-      - name: music
-        mountPath: /music
-      - name: config
-        mountPath: /config
+    buildCommand: docker build -t swingmusic:latest .
+    startCommand: docker run -p 1970:1970 -v /music:/music -v /config:/config swingmusic:latest
