@@ -1,0 +1,32 @@
+{
+    "serverId": "3fb30b12-5949-4b0b-8951-70a0463623ce",
+    "usersOnLogin": true,
+    "rootDirs": [
+        "/music"
+    ],
+    "excludeDirs": [],
+    "artistSeparators": [
+        "/",
+        ";"
+    ],
+    "artistSplitIgnoreList": [
+        "Crosby, Stills, Nash & Young",
+        "Bob marley & the wailers",
+        "AC/DC"
+    ],
+    "genreSeparators": [
+        "/",
+        ";",
+        "&"
+    ],
+    "extractFeaturedArtists": true,
+    "removeProdBy": true,
+    "removeRemasterInfo": true,
+    "mergeAlbums": false,
+    "cleanAlbumTitle": true,
+    "showAlbumsAsSingles": false,
+    "enablePeriodicScans": false,
+    "scanInterval": 10,
+    "enableWatchdog": false,
+    "enablePlugins": true
+}

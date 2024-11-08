@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  swingmusic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1970:1970"
+    volumes:
+      - ./music:/music
+      - ./config:/config
+    environment:
+      - SWINGMUSIC_APP_VERSION=1.0.0
+    command: ["python", "manage.py", "--host", "0.0.0.0", "--config", "/config"]
