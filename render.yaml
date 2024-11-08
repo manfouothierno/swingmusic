@@ -8,4 +8,4 @@ services:
       - key: SWINGMUSIC_APP_VERSION
         value: 1.0.0
     buildCommand: docker build -t swingmusic:latest .
-    startCommand: docker run -p 1970:1970 -v /music:/music -v /config:/config swingmusic:latest
+    # startCommand: docker run -p 1970:1970 -v /music:/music -v /config:/config swingmusic:latest
